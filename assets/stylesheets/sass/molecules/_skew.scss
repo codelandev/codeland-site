@@ -1,0 +1,36 @@
+.skew-container {
+  position: relative;
+  height: 130px;
+}
+
+.skew-line {
+  position: absolute;
+  overflow: hidden;
+  height: 170px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.skew {
+  position: absolute;
+  width: 120%;
+  height: 170px;
+  z-index: 20;
+  overflow: hidden;
+  transform: rotate(-4deg);
+  background: $brand-black;
+  top: 95px;
+}
+
+.skew-right {
+  position: absolute;
+  left: -38%;
+  width: 120%;
+  height: 170px;
+  z-index: 20;
+  overflow: hidden;
+  transform: rotate(5deg);
+  background: $brand-black;
+  top: 88px;
+}

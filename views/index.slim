@@ -1,0 +1,141 @@
+main
+  section.intro
+    header.intro__header
+      .container
+        .row
+          .col-sm-12.col-md-10.col-md-offset-1.col-lg-12.col-lg-offset-0
+            a.logo
+              img[src="#{image_path 'logo-codeland.png'}"]
+    .intro__hero
+      .container
+        .row
+          .col-sm-12.col-md-7.col-md-offset-1.col-lg-8.col-lg-offset-0
+            h1.title--xl.title--up.intro__title Lance sua startup em duas semanas
+        .row
+          .col-sm-12.col-md-7.col-md-offset-1.col-lg-8.col-lg-offset-0
+            strong.intro__description Acreditamos que uma startup precisa muito mais do que apenas desenvolvimento. É por isso que trabalhamos junto com você desde o planejamento do seu canvas até o lançamento do seu MVP online.
+        .row
+          .col-sm-12.col-md-11.col-md-offset-1.col-lg-12.col-lg-offset-0
+            a.js-contact-btn.btn.btn--line.btn--lg.intro__btn Saiba como
+  section.projects
+    .container
+      .row
+        .col-sm-12.col-md-10.col-md-offset-1.col-lg-12.col-lg-offset-0
+          header.projects__title
+            h2.title--bordered
+              span Faça como
+              span estas startups
+      .row
+        .col-sm-12.col-md-10.col-md-offset-1.col-lg-12.col-lg-offset-0
+          p.text--gray Já atendemos dezenas de startups com mais diversos tipos de projetos. Faça como eles e escolha a gente para lançar seu novo negócio!
+    .projects__grid
+      .container-fluid
+        .row.no-pad
+          article.col-md-4.col-sm-6
+            .project-box
+              .project-box__image[style="background-image: url(#{image_path 'educais.jpg'})"]
+              h1.project-box__name
+                | Educais
+          article.col-md-4.col-sm-6
+            .project-box
+              .project-box__image[style="background-image: url(#{image_path 'curto.jpg'})"]
+              h1.project-box__name
+                | cur.to
+          article.col-md-4.col-sm-6
+            .project-box
+              .project-box__image[style="background-image: url(#{image_path 'playduca.jpg'})"]
+              h1.project-box__name
+                | Playduca
+          article.col-md-4.col-sm-6
+            .project-box
+              .project-box__image[style="background-image: url(#{image_path 'viachamber.jpg'})"]
+              h1.project-box__name
+                | Viachamber
+          article.col-md-4.col-sm-6
+            .project-box
+              .project-box__image[style="background-image: url(#{image_path 'listabeta.jpg'})"]
+              h1.project-box__name
+                | LISTABETA
+          article.col-md-4.col-sm-6
+            .project-box
+              .project-box__image[style="background-image: url(#{image_path 'thinktodo.jpg'})"]
+              h1.project-box__name
+                | thinkto.do
+          .col-md-12.text-center
+
+      .slide-show
+    .slide-show__description
+  .skew-container
+    .skew-line
+      .skew
+      .skew-right
+  section.lower
+    .container.js-contact
+      .row
+        .col-sm-12.col-md-10.col-md-offset-1.col-lg-12.col-lg-offset-0
+          h1.lower__title
+            span 100% clientes
+            span Indicam
+          .col-sm-12.col-md-6.col-lg-6
+            aside.pride-box
+              article.pride-box__quote
+                p A possibilidade se realizar um sonho em pouco tempo e com muita qualidade!
+                .pride-box__author
+                  img.pride-box__author__avatar[height="50" src="#{image_path 'carolina-augusta.jpg'}" width="50"]
+                  .pride-box__author__info
+                    .pride-box__author__name
+                      | Carolina Araujo
+                    .pride-box__author__company
+                      | BOOMIT
+              article.pride-box__quote
+                p Queria uma empresa que se apaixonasse e acreditasse em meu negócio tanto quanto eu.
+                .pride-box__author
+                  img.pride-box__author__avatar[height="50" src="#{image_path 'rodrigo-costa.jpg'}" width="50"]
+                  .pride-box__author__info
+                    .pride-box__author__name
+                      | Rodrigo Castro
+                    .pride-box__author__company
+                      | Educonnect
+              article.pride-box__quote
+                p Havia negociado o desenvolvimento do cur.to com outras empresas. Todas recusaram por achar o projeto bastante complexo. Os caras da CODELAND encararam o desafio!
+                .pride-box__author
+                  img.pride-box__author__avatar[height="50" src="#{image_path 'fernando-sousa.jpg'}" width="50"]
+                  .pride-box__author__info
+                    .pride-box__author__name
+                      | Fernando Sousa
+                    .pride-box__author__company
+                      | cur.to
+          .col-sm-12.col-md-5.col-md-offset-1.col-lg-5.col-lg-offset-1
+            section
+              .form-box
+                form[action="/contact" method="post"]
+                  input[type="text" name="message[spam]" value="" style="display: none"]
+                  input[type="hidden" name="message[antispam]" value=""]
+                  .form-box__divider
+                    input[name="message[name]" placeholder="Nome Completo" required="true" type="text"]
+                  .form-box__divider
+                    input[name="message[mail]" placeholder="exemplo@email.com" required="true" type="text"]
+                  .form-box__divider
+                    input#mask-phone[name="message[phone]" placeholder="(DDD)XXXXX-XXXX" required="true" type="text"]
+                  .form-box__divider
+                    .select
+                      select[name="message[budget]" placeholder="Orçamento Disponível" required="true"]
+                        option[disabled="disabled" value="default"] Orçamento Disponível
+                        option[value="7-10"] R$ 7 a 10 mil
+                        option[value="10-15"] R$ 10 a 15 mil
+                        option[value="more"] mais de 15 mil
+                  .form-box__divider
+                    textarea[name="message[body]" placeholder="Fale mais sobre o seu projeto..."]
+                  .form-box__divider
+                    button.btn.btn--line-yellow.btn--lg.btn--block[type="submit" value="Enviar"] Enviar mensagem
+  section.footer
+    .container
+      .row
+        .col-sm-12.col-md-10.col-md-offset-1.col-lg-12.col-lg-offset-0
+          p.text-center
+            strong CODELAND
+            |  &nbsp;･&nbsp; Rua Felipe Neri, 128, sala 201. Porto Alegre - RS&nbsp; ･ &nbsp;
+            strong
+              | (51) 3779-9710
+            |  ou&nbsp;
+            strong contato@codeland.com.br

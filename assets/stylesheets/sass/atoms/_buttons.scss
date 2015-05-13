@@ -1,0 +1,52 @@
+.btn {
+  border: 2px solid transparent;
+  color: $brand-black;
+  padding: 6px 8px;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: all .4s;
+}
+
+.btn--line {
+  border-radius: 200px;
+  border-color: $brand-black;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-black;
+    color: $brand-yellow;
+  }
+}
+
+.btn--line-yellow {
+  background: transparent;
+  color: #fff;
+  border-radius: 200px;
+  border-color: $brand-yellow;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-yellow;
+    color: $brand-black;
+  }
+}
+
+.btn--lg {
+  padding: 12px 28px;
+  font-size: 18px;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  .btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
