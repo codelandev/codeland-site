@@ -9,6 +9,7 @@
 @import 'atoms/buttons';
 @import 'atoms/inputs';
 @import 'atoms/selects';
+@import 'atoms/links';
 
 // ==== Molecules
 @import 'molecules/flash';
@@ -16,12 +17,22 @@
 @import 'molecules/skew';
 @import 'molecules/form';
 @import 'molecules/project-box';
+@import 'molecules/menu';
+@import 'molecules/grid';
+@import 'molecules/card-box';
+@import 'molecules/maps';
+@import 'molecules/ico';
 
 // ==== Organisms
 @import 'organisms/intro';
 @import 'organisms/projects';
 @import 'organisms/lower';
 @import 'organisms/footer';
+@import 'organisms/header';
+@import 'organisms/passion';
+@import 'organisms/pride';
+@import 'organisms/social';
+@import 'organisms/contact';
 
 // ==== Home
 @import 'pages/home';

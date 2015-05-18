@@ -11,7 +11,7 @@
     &:before {
       content: '“';
       font-family: Helvetica;
-      color: #444;
+      color: $brand-gray;
       font-size: 82px;
       position: absolute;
       left: -40px;
@@ -38,7 +38,7 @@
 .pride-box__author__name {
   font-size: 18px;
   font-weight: 300;
-  color: $brand-yellow;
+  color: $brand-gray;
 }
 
 .pride-box__author__company {

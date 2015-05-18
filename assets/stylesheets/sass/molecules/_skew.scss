@@ -12,7 +12,7 @@
   top: 0;
 }
 
-.skew {
+.skew-up {
   position: absolute;
   width: 120%;
   height: 170px;
@@ -23,7 +23,7 @@
   top: 95px;
 }
 
-.skew-right {
+.skew-up-right {
   position: absolute;
   left: -38%;
   width: 120%;
@@ -33,4 +33,31 @@
   transform: rotate(5deg);
   background: $brand-black;
   top: 88px;
+}
+
+// ======= Down
+
+.skew-down {
+  position: absolute;
+  width: 120%;
+  height: 170px;
+  z-index: 20;
+  overflow: hidden;
+  background: $brand-black;
+  transform: rotate(-6deg);
+  left: -10%;
+  top: -70%;
+}
+
+.skew-down-right {
+  position: absolute;
+  left: -38%;
+  width: 120%;
+  height: 170px;
+  z-index: 20;
+  overflow: hidden;
+  background: $brand-black;
+  transform: rotate(11deg);
+  left: 58%;
+  top: -36%;
 }

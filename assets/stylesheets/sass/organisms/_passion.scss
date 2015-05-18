@@ -1,0 +1,15 @@
+.passion {
+  background: $brand-black;
+  background-image: image-url('middle-bg.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.passion__title {
+  width: 50%;
+  text-align: justify;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 900;
+}

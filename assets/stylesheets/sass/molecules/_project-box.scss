@@ -6,19 +6,29 @@
   height: 220px;
   overflow: hidden;
   background-size: 100% 100%;
-  cursor: pointer;
-  background: rgba(0, 0, 0, .4);
   transition: all .3s;
-  cursor: default;
 
   &:hover,
-  &:active {
-    background: rgba(0, 0, 0, .1);
-    cursor: default;
-
+  &:active,
+  &:focus {
     .project-box__name {
       transform: translateY(160%);
     }
+
+    &:after {
+      background: rgba(0, 0, 0, .1);
+    }
+  }
+
+  &:after {
+    transition: all .3s;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .4);
   }
 }
 
@@ -29,7 +39,6 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: -1;
 }
 
 .project-box__name {

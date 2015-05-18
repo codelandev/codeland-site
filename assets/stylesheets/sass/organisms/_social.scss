@@ -1,0 +1,18 @@
+.social-box {
+  background: #f2f2f2;
+  height: 20px;
+  width: 20%;
+  float: left;
+  height: 120px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+
+  & + & {
+    border-left: 1px solid darken(#f2f2f2, 5%);
+  }
+
+  &:hover {
+    background: darken(#f2f2f2, 5%);
+  }
+}
