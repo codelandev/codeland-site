@@ -3,6 +3,7 @@
 
 require 'sinatra'
 require 'sinatra/asset_pipeline'
+require 'sinatra/partial'
 
 MAIL_ATTRIBUTES = [:name, :mail, :phone, :budget]
 
@@ -31,6 +32,10 @@ class App < Sinatra::Base
   set :assets_css_compressor, :sass
   set :assets_js_compressor, :uglifier
   register Sinatra::AssetPipeline
+
+  # Partials
+  register Sinatra::Partial
+  set :partial_template_engine, :slim
 
   get '/' do
     slim :index
