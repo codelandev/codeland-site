@@ -1,5 +1,5 @@
 # Codeland site
-> Build with [Pipe](https://github.com/codelandev/pipe).
+> Built with [Pipe](https://github.com/codelandev/pipe).
 
 ```bash
 git clone git@github.com:codelandev/codeland-site.git
