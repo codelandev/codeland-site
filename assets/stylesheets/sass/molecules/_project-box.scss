@@ -1,5 +1,5 @@
 .projects__grid {
-  padding: 30px 0 10px 0;
+  padding: 50px 0 30px;
 }
 
 .project-box {
@@ -16,7 +16,7 @@
     }
 
     &:after {
-      background: rgba(0, 0, 0, .1);
+      background: rgba(0, 0, 0, .4);
     }
   }
 
@@ -28,7 +28,7 @@
     top: 0;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .1);
   }
 }
 
