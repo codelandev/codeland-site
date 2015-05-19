@@ -7,10 +7,7 @@
   display: block;
   text-align: center;
   cursor: pointer;
-
-  & + & {
-    border-left: 1px solid darken(#f2f2f2, 5%);
-  }
+  border: 1px solid #ccc;
 
   &:hover {
     background: darken(#f2f2f2, 5%);

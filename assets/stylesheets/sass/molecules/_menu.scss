@@ -22,14 +22,10 @@
     height: 26px;
     display: block;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #000;
-      border-bottom: 2px solid #000;
-      height: 22px;
-    }
-
-    &--active {
-      border-bottom: 2px solid #000;
+      border-bottom: 4px solid #000;
       height: 22px;
     }
   }
