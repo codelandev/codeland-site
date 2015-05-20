@@ -23,10 +23,33 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .intro__title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro__title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .intro__title {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .intro__header,
   .intro__hero {
     padding: 10px 0;
+  }
+
+  .intro__title {
+    margin-top: 0;
   }
 
   .intro__btn {
@@ -34,3 +57,4 @@
     background: $brand-yellow;
   }
 }
+
