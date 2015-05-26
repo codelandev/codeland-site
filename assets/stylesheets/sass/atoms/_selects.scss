@@ -2,7 +2,7 @@
   position: relative;
   background: #f2f2f2;
   border-radius: 200px;
-  border: solid 1px #ccc;
+  border: solid 1px $gray__light;
 
   select {
     cursor: pointer;
@@ -12,6 +12,7 @@
     width: 100%;
     border-radius: 200px;
     border: 0;
+    background: #f2f2f2;
     padding: 17px 22px;
     color: $brand-black;
     font-weight: bold;

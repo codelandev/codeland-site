@@ -1,6 +1,6 @@
 .menu {
   list-style: none;
-  padding: 14px 0;
+  padding: 23px 0 0 0;
 
   &__item {
     display: inline-block;
@@ -29,5 +29,20 @@
       height: 22px;
     }
   }
+}
 
+@media screen and (max-width: 570px) {
+  .menu {
+    &__item {
+      padding: 15px 0;
+
+      & + & { margin-left: 0px;}
+    }
+    &__link {
+      border: 0;
+      height: 22px;
+      &:hover,
+      &:focus { border: 0; }
+    }
+  }
 }

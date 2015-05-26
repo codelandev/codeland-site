@@ -1,9 +1,60 @@
 .header {
-  padding: 20px 20px;
+  padding: 20px 0px;
+}
+
+.nav-bar { margin-bottom: 0px; }
+
+.navbar-default {
+  background: none;
+  border: 0;
+
+  .navbar-toggle {
+    border: 0;
+    margin-top: 21px;
+    padding: 0;
+    margin-right: 0;
+
+    &:hover,
+    &:active,
+    &:focus { background: none; }
+
+    .icon-bar {
+      background-color: $brand-black;
+      width: 30px;
+      height: 4px;
+      border-radius: 4px;
+      + .icon-bar { margin-top: 5px;}
+    }
+  }
+}
+
+.navbar-collapse {
+  border: 0;
+
+  & .in {
+    .menu {
+      &__item {
+        & + & { margin-left: 0; }
+      }
+    }
+  }
+}
+
+.navbar-brand { padding: 5px 15px 0 15px; }
+
+.navbar-default .navbar-nav > li > a { color: inherit; }
+
+.navbar-nav > li > a { padding: 0; }
+
+.nav > li > a {
+  padding: 0;
+  line-height: auto;
 }
 
 @media screen and (max-width: 320px) {
-  .header {
-    padding-bottom: 0;
-  }
+  .header { padding-bottom: 0; }
+}
+
+@media screen and (max-width: 570px) {
+  .navbar-brand { padding-left: 0; }
 }

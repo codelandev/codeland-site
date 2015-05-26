@@ -12,6 +12,15 @@
   top: 0;
 }
 
+.skew-line__black {
+  @extend .skew-line;
+  .skew-up,
+  .skew-up-right,
+  .skew-down,
+  .skew-down-right { background-color: white; }
+  background-color: $brand-black;
+}
+
 .skew-up {
   position: absolute;
   width: 120%;
@@ -44,7 +53,7 @@
   z-index: 20;
   overflow: hidden;
   background: $brand-black;
-  transform: rotate(-6deg);
+  transform: rotate(-4deg);
   left: -10%;
   top: -70%;
 }
@@ -57,7 +66,13 @@
   z-index: 20;
   overflow: hidden;
   background: $brand-black;
-  transform: rotate(11deg);
+  transform: rotate(6deg);
   left: 58%;
   top: -48%;
 }
+
+@media screen and (max-width: 621px) { transform: rotate(8deg); }
+
+@media screen and (max-width: 450px) { transform: rotate(10deg);}
+
+@media screen and (max-width: 350px) { transform: rotate(12deg);}
