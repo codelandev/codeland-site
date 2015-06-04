@@ -52,7 +52,7 @@ class App < Sinatra::Base
       :to => 'contato@codeland.com.br',
       :from => mail,
       :reply_to => mail,
-      :subject => '[HOT] Lance minha Startup em duas semanas',
+      :subject => 'Desenvolvimento de Sistema Web',
       :body => "Nome: #{name}\n" + "E-mail: #{mail}\n" + "Telefone: #{phone}\n" + "Orçamento: #{budget}\n" + body,
       :via => :smtp,
       :via_options => {

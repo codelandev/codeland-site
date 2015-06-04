@@ -5,6 +5,11 @@
   padding: 27px 0;
   strong { font-weight: 900; }
 
+  a {
+    color: $brand-gray;
+    &:hover { color: $brand-yellow; text-decoration: none; }
+  }
+
   p {
     margin: 0;
   }

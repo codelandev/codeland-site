@@ -9,6 +9,7 @@
   cursor: pointer;
   border-top: 1px solid #e9e9e9;
   border-right: 1px solid $gray__light;
+  color: $brand-gray;
 
   &:nth-of-type(5) {
     border-right: 0;
@@ -17,9 +18,39 @@
     }
   }
 
+  &:visited,
+  &:focus { color: $brand-gray; }
+
   &:hover {
     background: $brand-yellow;
     border-top: 1px solid $gray__light;
     border-right: 1px solid $gray__light;
+    color: $brand-black;
+  }
+
+  .fa { margin-top: 20px; }
+
+  @media only screen and (max-width: 767px) {
+    .fa { margin-top: 28px; }
+
+    .fa-5x { font-size: 4em; }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .fa { margin-top: 37px; }
+
+    .fa-5x { font-size: 3em; }
+  }
+
+  @media only screen and (max-width: 350px) {
+    height: 80px;
+
+    .fa { margin-top: 26px; }
+
+    .fa-5x { font-size: 2em; }
+  }
+
+  @media only screen and (max-width: 313px) {
+    width: 100%;
   }
 }

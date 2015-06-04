@@ -71,8 +71,15 @@
   top: -48%;
 }
 
-@media screen and (max-width: 621px) { transform: rotate(8deg); }
+@media screen and (max-width: 621px) {
+  .skew-down-right { transform: rotate(8deg); }
+}
 
-@media screen and (max-width: 450px) { transform: rotate(10deg);}
+@media screen and (max-width: 462px) {
+  .skew-down-right { transform: rotate(10deg); }
+}
 
-@media screen and (max-width: 350px) { transform: rotate(12deg);}
+@media screen and (max-width: 350px) {
+  .skew-down-right { transform: rotate(12deg); }
+  .skew-down { transform: rotate(-7deg); }
+}
