@@ -7,15 +7,15 @@
 VMasker(document.querySelector("#mask-phone")).maskPattern("(99) 99999-9999");
 
 document.addEventListener('DOMContentLoaded', function() {
-  var btnScroll = document.querySelector('.js-contact-btn');
-  var btnScroll = document.querySelector('.js-process-btn');
-  var btnScroll = document.querySelector('.js-projects-btn');
+  var elements = ['.js-contact', '.js-process', '.js-projects'];
 
-  btnScroll.addEventListener('click', function () {
-    var destine = document.querySelector('.js-contact');
-    var destine = document.querySelector('.js-process');
-    var destine = document.querySelector('.js-projects');
-    window.smoothScroll(destine, 2000)
+  elements.forEach(function (element) {
+    var btn = document.querySelector(element + '-btn');
+
+    btn.addEventListener('click', function (e) {
+      var destine = document.querySelector(element);
+      window.smoothScroll(destine, 2000)
+    });
   });
 
   setTimeout( function(){ var flash = document.querySelector('.flash'); if(flash){flash.style.display = 'none';}}, 6000);
