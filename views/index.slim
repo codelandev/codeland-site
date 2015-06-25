@@ -59,6 +59,7 @@ main
                     | Design
                   p.text--gray.card-box__description
                     | Em nossa segunda fase, junto com você e a equipe de desenvolvimento, nossos designers planejam a parte visual do sistema - acreditamos as melhores interfaces são as que são simples e fáceis de serem usadas. Estamos indo atrás disso quando desenhamos um novo produto.
+                    / | Vamos planejar visualmente como seu produto vai ser. Criaremos o organograma, os cenários de uso, personas, wireframes e a estética da interface. O mais legal é que os devs também participam.
               .col-sm-3.col-md-3
                 .card-box
                   .card-box__image
@@ -79,6 +80,7 @@ main
                     | Entrega
                   p.text--gray.card-box__description
                     | Trabalhamos com ciclos de desenvolvimento semanais. No final de cada semana você receberá um pedaço funcional do seu produto, para que você possa testá-lo e receber feedback o quanto ates. Quando chegamos no fim de cada ciclo, garantimos que o sistema passou por uma série de testes para certificar sua qualidade.
+                    / | Após cada ciclo de desenvolvimento você terá uma “parte” funcional do seu software online e pronta para ser testada. Neste ponto o seu sistema passou por rigorosos processos de testes e está totalmente blindado.
 
   .skew-container
     .skew-line__black
@@ -232,7 +234,9 @@ main
                     .form-box__divider
                       input[name="message[name]" placeholder="Seu nome" required="true" type="text"]
                     .form-box__divider
-                      input[name="message[mail]" placeholder="Seu email" required="true" type="text"]
+                      input[name="message[mail]" placeholder="exemplo@email.com" required="true" type="text"]
+                    .form-box__divider
+                      input#mask-phone[name="message[phone]" placeholder="(DDD)XXXXX-XXXX" required="false" type="text"]
                     .form-box__divider
                       .select
                         select[name="message[budget]" placeholder="Orçamento" required="true"]
