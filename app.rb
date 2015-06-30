@@ -5,7 +5,7 @@ require 'sinatra'
 require 'sinatra/asset_pipeline'
 require 'sinatra/partial'
 
-MAIL_ATTRIBUTES = [:name, :mail, :budget]
+MAIL_ATTRIBUTES = [:name, :mail , :budget]
 
 def invalid_attributes
   attributes = []
