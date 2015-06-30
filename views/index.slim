@@ -2,13 +2,14 @@
   .flash
     .success.wrapper
       .notice
-        h2 Mensagem enviada com sucesso. Logo entraremos em contato!
+        h2 Sucessfully sent. We'll get in touch soon!
 
 - if params[:errors]
   .flash
     .error.wrapper
       .notice
-        h2 Preencha o formulário corretamente.
+        h2 Please fill out the form correctly.
+
 main
   section.intro
     == partial(:header)
