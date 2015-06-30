@@ -1,3 +1,14 @@
+- if params[:success] == 'success'
+  .flash
+    .success.wrapper
+      .notice
+        h2 Mensagem enviada com sucesso. Logo entraremos em contato!
+
+- if params[:errors]
+  .flash
+    .error.wrapper
+      .notice
+        h2 Preencha o formulário corretamente.
 main
   section.intro
     == partial(:header)
