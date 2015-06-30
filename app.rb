@@ -5,7 +5,7 @@ require 'sinatra'
 require 'sinatra/asset_pipeline'
 require 'sinatra/partial'
 
-MAIL_ATTRIBUTES = [:name, :mail, :phone, :budget]
+MAIL_ATTRIBUTES = [:name, :mail, :budget]
 
 def invalid_attributes
   attributes = []
@@ -45,7 +45,6 @@ class App < Sinatra::Base
     return redirect("/?errors=#{invalid_attributes.map(&:to_s).join(",")}") unless is_valid_mail?
     name = params[:message][:name]
     mail = params[:message][:mail]
-    phone = params[:message][:phone]
     budget = params[:message][:budget]
     body = params[:message][:body]
     Pony.mail(
@@ -53,16 +52,16 @@ class App < Sinatra::Base
       :from => mail,
       :reply_to => mail,
       :subject => 'Desenvolvimento de Sistema Web',
-      :body => "Nome: #{name}\n" + "E-mail: #{mail}\n" + "Telefone: #{phone}\n" + "Orçamento: #{budget}\n" + body,
+      :body => "Nome: #{name}\n" + "E-mail: #{mail}\n" + "Orçamento: #{budget}\n" + body,
       :via => :smtp,
       :via_options => {
-        :address               => 'smtp.gmail.com',
-        :port                  => '587',
-        :enable_starttls_auto  => true,
-        :user_name             => ENV['email_user'],
-        :password              => ENV['email_password'],
-        :authentication        => :plain,
-        :domain                => 'codeland.com.br'
+        :address => 'smtp.sendgrid.net',
+        :port => '587',
+        :domain => 'heroku.com',
+        :user_name => ENV['SENDGRID_USERNAME'],
+        :password => ENV['SENDGRID_PASSWORD'],
+        :authentication => :plain,
+        :enable_starttls_auto => true
       }
     )
     redirect "/?success=success"
