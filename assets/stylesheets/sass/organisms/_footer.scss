@@ -1,13 +1,16 @@
 .footer {
-  background-color: $brand-black;
-  color: $brand-gray;
+  background-color: $brand-yellow;
+  color: $brand-black;
   font-size: 14px;
-  padding: 27px 0;
+  padding: 40px 0;
   strong { font-weight: 900; }
 
   a {
-    color: $brand-gray;
-    &:hover { color: $brand-yellow; text-decoration: none; }
+    color: $brand-black;
+    &:hover {
+      color: $brand-gray;
+      text-decoration: none;
+    }
   }
 
   p {

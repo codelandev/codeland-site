@@ -12,7 +12,8 @@
   &:active,
   &:focus {
     .project-box__name {
-      transform: translateY(160%);
+      transform: translateY(180%);
+      z-index: 1000;
     }
 
     &:after {

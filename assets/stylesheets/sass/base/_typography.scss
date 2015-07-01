@@ -31,6 +31,10 @@ body {
 // ==== Text colors
 
 .text--gray {
+  color: $gray__medium !important;
+}
+
+.text--gray--light {
   color: $brand-gray !important;
 }
 

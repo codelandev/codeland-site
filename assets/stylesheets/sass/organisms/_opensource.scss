@@ -1,19 +1,22 @@
 .opensource {
-  background-color: $brand-yellow;
-  color: $brand-black;
+  background-color: $brand-black;
+  color: $brand-yellow;
   font-size: 14px;
-  padding: 27px 0;
-  strong { font-weight: 900;}
+  padding: 60px 0 50px;
 
   a {
-    color: $brand-black;
+    color: $brand-gray;
     display: block;
-    &:hover { color: $brand-gray; text-decoration: none; }
+    &:hover {
+      color: $brand-yellow;
+      text-decoration: none;
+    }
   }
 
   p {
     margin: 0;
   }
+
   .title{
     margin-bottom: 10px;
   }
