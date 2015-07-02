@@ -204,7 +204,7 @@
 }
 @mixin transition-timing-function($timing-function) {
   -webkit-transition-timing-function: $timing-function;
-       -o-transition-timing-function: $transition-duration;
+       -o-transition-timing-function: $timing-function;
           transition-timing-function: $timing-function;
 }
 @mixin transition-transform($transition...) {
