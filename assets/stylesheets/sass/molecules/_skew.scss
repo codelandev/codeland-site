@@ -28,6 +28,8 @@
   z-index: 20;
   overflow: hidden;
   -webkit-transform: rotate(-4deg);
+     -moz-transform: rotate(-4deg);
+       -o-transform: rotate(-4deg);
           transform: rotate(-4deg);
   background: $brand-black;
   top: 95px;
@@ -41,6 +43,8 @@
   z-index: 20;
   overflow: hidden;
   -webkit-transform: rotate(5deg);
+     -moz-transform: rotate(5deg);
+       -o-transform: rotate(5deg);
           transform: rotate(5deg);
   background: $brand-black;
   top: 88px;
@@ -56,6 +60,8 @@
   overflow: hidden;
   background: $brand-black;
   -webkit-transform: rotate(-4deg);
+     -moz-transform: rotate(-4deg);
+       -o-transform: rotate(-4deg);
           transform: rotate(-4deg);
   left: -10%;
   top: -70%;
@@ -70,6 +76,8 @@
   overflow: hidden;
   background: $brand-black;
   -webkit-transform: rotate(6deg);
+     -moz-transform: rotate(6deg);
+       -o-transform: rotate(6deg);
           transform: rotate(6deg);
   left: 58%;
   top: -48%;
@@ -78,6 +86,8 @@
 @media screen and (max-width: 621px) {
   .skew-down-right {
     -webkit-transform: rotate(8deg);
+       -moz-transform: rotate(8deg);
+         -o-transform: rotate(8deg);
             transform: rotate(8deg);
   }
 }
@@ -85,6 +95,8 @@
 @media screen and (max-width: 462px) {
   .skew-down-right {
     -webkit-transform: rotate(10deg);
+       -moz-transform: rotate(10deg);
+         -o-transform: rotate(10deg);
             transform: rotate(10deg);
   }
 }
@@ -92,10 +104,14 @@
 @media screen and (max-width: 350px) {
   .skew-down-right {
     -webkit-transform: rotate(12deg);
+       -moz-transform: rotate(12deg);
+         -o-transform: rotate(12deg);
             transform: rotate(12deg);
   }
   .skew-down {
     -webkit-transform: rotate(-7deg);
+       -moz-transform: rotate(-7deg);
+         -o-transform: rotate(-7deg);
             transform: rotate(-7deg);
   }
 }
