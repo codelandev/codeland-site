@@ -4,6 +4,10 @@
 
 .card-box {
   text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
 }
 
 .card-box__image {
