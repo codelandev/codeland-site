@@ -51,6 +51,32 @@
   line-height: auto;
 }
 
+.logo {
+  background-image: image-url('logo-codeland.png');
+  -webkit-background-size: 188px 51px;
+       -o-background-size: 188px 51px;
+          background-size: 188px 51px;
+  height: 51px;
+  width: 188px;
+  display: inline-block;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    background-image: image-url('logo-codeland@2x.png');
+    -webkit-background-size: 188px 51px;
+        -o-background-size: 188px 51px;
+           background-size: 188px 51px;
+    height: 51px;
+    width: 188px;
+    display: inline-block;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .header { padding-bottom: 0; }
 }
