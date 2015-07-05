@@ -29,31 +29,38 @@
 
 .intro__btn { margin: 26px 0; }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 678px) {
   .intro__title {
-    font-size: 50px;
+    font-size: 52px;
     line-height: 1;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .intro__title { font-size: 42px; }
+@media screen and (max-width: 579px) {
+  .intro__title { font-size: 46px; }
 }
 
 @media screen and (max-width: 440px) {
   .intro { min-height: 520px; }
 
   .intro__title {
-    font-size: 30px;
+    font-size: 36px;
     line-height: 1.1;
   }
+
+  .intro__btn { width: 100%; }
 }
 
 @media screen and (max-width: 320px) {
   .intro__header,
   .intro__hero { padding: 10px 0; }
 
-  .intro__title { margin-top: 0; }
+  .intro__title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .intro__description { font-size: 16px; }
 
   .intro__btn {
     margin: 20px auto;
