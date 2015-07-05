@@ -1,4 +1,4 @@
-  # import libs
+# import libs
 # import routes
 
 require 'sinatra'
@@ -48,11 +48,11 @@ class App < Sinatra::Base
     budget = params[:message][:budget]
     body = params[:message][:body]
     Pony.mail(
-      :to => 'contato@codeland.com.br',
+      :to => 'hello@codeland.me',
       :from => mail,
       :reply_to => mail,
-      :subject => 'Desenvolvimento de Sistema Web',
-      :body => "Nome: #{name}\n" + "E-mail: #{mail}\n" + "Orçamento: #{budget}\n" + body,
+      :subject => 'Web development',
+      :body => "Name: #{name}\n" + "E-mail: #{mail}\n" + "Budget: #{budget}\n" + body,
       :via => :smtp,
       :via_options => {
         :address => 'smtp.sendgrid.net',
