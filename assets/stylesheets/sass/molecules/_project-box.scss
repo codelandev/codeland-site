@@ -12,8 +12,11 @@
   &:active,
   &:focus {
     .project-box__name {
-      transform: translateY(180%);
       -webkit-transform: translateY(180%);
+         -moz-transform: translateY(180%);
+          -ms-transform: translateY(180%);
+           -o-transform: translateY(180%);
+              transform: translateY(180%);
       z-index: 1000;
     }
 
@@ -50,5 +53,9 @@
   text-align: center;
   transition: all .3s;
   will-change: transform;
-  transform: translateY(200px);
+  -webkit-transform: translateY(200px);
+     -moz-transform: translateY(200px);
+      -ms-transform: translateY(200px);
+       -o-transform: translateY(200px);
+          transform: translateY(200px);
 }
