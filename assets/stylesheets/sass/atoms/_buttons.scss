@@ -4,7 +4,11 @@
   padding: 6px 8px;
   font-weight: bold;
   text-transform: capitalize;
-  transition: all .4s;
+  -webkit-transition: all .4s;
+     -moz-transition: all .4s;
+      -ms-transition: all .4s;
+       -o-transition: all .4s;
+          transition: all .4s;
 }
 
 .btn--line {

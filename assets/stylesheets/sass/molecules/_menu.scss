@@ -17,7 +17,11 @@
     font-size: 14px;
     font-weight: bold;
     padding-bottom: 3px;
-    transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+       -moz-transition: all .15s ease-in-out;
+        -ms-transition: all .15s ease-in-out;
+         -o-transition: all .15s ease-in-out;
+            transition: all .15s ease-in-out;
     border-bottom: 2px solid transparent;
     height: 26px;
     display: block;
