@@ -6,14 +6,21 @@
   height: 220px;
   overflow: hidden;
   background-size: 100% 100%;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+      -ms-transition: all .3s;
+       -o-transition: all .3s;
+          transition: all .3s;
 
   &:hover,
   &:active,
   &:focus {
     .project-box__name {
-      transform: translateY(180%);
       -webkit-transform: translateY(180%);
+         -moz-transform: translateY(180%);
+          -ms-transform: translateY(180%);
+           -o-transform: translateY(180%);
+              transform: translateY(180%);
       z-index: 1000;
     }
 
@@ -23,7 +30,11 @@
   }
 
   &:after {
-    transition: all .3s;
+    -webkit-transition: all .3s;
+       -moz-transition: all .3s;
+        -ms-transition: all .3s;
+         -o-transition: all .3s;
+            transition: all .3s;
     content: '';
     display: block;
     position: absolute;
@@ -48,7 +59,15 @@
   text-shadow: 0px 2px 5px rgba(0, 0, 0, .7);
   font-weight: 900;
   text-align: center;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+      -ms-transition: all .3s;
+       -o-transition: all .3s;
+          transition: all .3s;
   will-change: transform;
-  transform: translateY(200px);
+  -webkit-transform: translateY(200px);
+     -moz-transform: translateY(200px);
+      -ms-transform: translateY(200px);
+       -o-transform: translateY(200px);
+          transform: translateY(200px);
 }
