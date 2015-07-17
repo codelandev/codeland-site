@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generator: Avocode 2.0.0 - http://avocode.com -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="520" height="770" viewBox="0 0 520 770">
-    <desc>Created with Avocode</desc>
-    <path d="M 0 30 L 0 740 L 154 770 L 520 740 L 520 30 L 378 0 L 0 30 Z" opacity="0.3" fill="none" stroke="#fbfbfb" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="770"><desc>Created with Avocode</desc><path fill="none" stroke="#fbfbfb" d="M0 30v710l154 30 366-30V30L378 0 0 30z" opacity=".3"/></svg>
